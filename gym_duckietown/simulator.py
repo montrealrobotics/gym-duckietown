@@ -229,7 +229,7 @@ class Simulator(gym.Env):
         self.camera_width = camera_width
         self.camera_height = camera_height
 
-        self.robot_speed = robot_speed
+        self.robot_speed = robot_speed * 0.05
         # We observe an RGB image with pixels in [0, 255]
         # Note: the pixels are in uint8 format because this is more compact
         # than float32 if sent over the network or stored in a dataset
